@@ -1,2 +1,2 @@
 build:
-	docker build . -t docker-jupyter-with-ipa-font
+	docker build -t u110/docker-jupyter-with-ipa-font:latest .
