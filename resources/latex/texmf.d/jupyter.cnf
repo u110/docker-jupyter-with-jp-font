@@ -1,0 +1,5 @@
+main_memory=8000000
+extra_mem_bot=8000000
+font_mem_size=8000000
+pool_size=8000000
+buf_size=8000000
