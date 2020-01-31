@@ -22,6 +22,11 @@ override this.-=))
     	\usepackage{fontspec}
     \fi
 
+    \usepackage{xeCJK}
+    \setCJKmainfont[BoldFont=IPAexGothic]{IPAexMincho}
+    \setCJKsansfont{IPAexGothic}
+    \setCJKmonofont{IPAGothic}
+
     % Basic figure setup, for now with no caption control since it's done
     % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
     \usepackage{graphicx}
@@ -190,10 +195,6 @@ override this.-=))
 ((* block body *))
 \begin{document}
 
-\setmainfont[BoldFont=IPAexGothic]{IPAexMincho}
-\setsansfont{IPAexGothic}
-\setmonofont{IPAGothic}
-    
     ((* block predoc *))
     ((* block maketitle *))\maketitle((* endblock maketitle *))
     ((* block abstract *))((* endblock abstract *))

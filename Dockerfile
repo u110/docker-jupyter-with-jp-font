@@ -2,7 +2,12 @@ FROM jupyter/datascience-notebook
 
 USER root
 
-RUN apt-get update && apt-get install -y vim texlive-lang-japanese texlive-xetex pandoc fontconfig
+RUN apt-get update \
+  && apt-get install -y vim \
+                        texlive-lang-japanese \
+                        texlive-xetex \
+                        pandoc \
+                        fontconfig
 
 COPY resources/latex/base.tplx /opt/conda/lib/python3.7/site-packages/nbconvert/templates/latex/base.tplx
 COPY resources/latex/texmf.d/jupyter.cnf /etc/texmf/texmf.d/jupyter.cnf
