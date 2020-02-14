@@ -4,6 +4,8 @@ container-name:=mynote-container
 target-note:=sample_report
 note-path:=$(CURDIR)/notes
 
+b: build
+
 build:
 	docker build -t u110/jupyter-with-jp-font:latest .
 
