@@ -14,6 +14,9 @@ COPY resources/latex/texmf.d/jupyter.cnf /etc/texmf/texmf.d/jupyter.cnf
 RUN update-texmf
 
 USER jovyan
+COPY resources/ipython_kernel_config.py .
+RUN ipython profile create
+RUN cat ipython_kernel_config.py >> /home/jovyan/.ipython/profile_default/ipython_kernel_config.py
 
 RUN echo "font.family : IPAexGothic" >> /opt/conda/lib/python3.7/site-packages/matplotlib/mpl-data/matplotlibrc && \
     rm -r ./.cache

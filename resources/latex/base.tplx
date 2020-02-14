@@ -200,6 +200,8 @@ override this.-=))
     ((* block abstract *))((* endblock abstract *))
     ((* endblock predoc *))
 
+    \tableofcontents
+
     ((( super() )))
 
     % Add a bibliography block to the postdoc
